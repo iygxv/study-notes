@@ -1,0 +1,11 @@
+:root {
+  --theme-background: #fff;
+}
+
+.dark {
+  --theme-background: #333;
+}
+
+.light {
+  --theme-background: #fff;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link id="theme-style" rel="stylesheet" href="light.css">
+</head>
+<style>
+body {
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<body>
+      <!-- 切换主题按钮 -->
+  <button id="theme-switch-btn">切换主题</button>
+
+
+  <script>
+    const themeSwitchBtn = document.getElementById("theme-switch-btn");
+    themeSwitchBtn.addEventListener("click", function() {
+      const themeStyle = document.getElementById("theme-style");
+      const isDefaultTheme = themeStyle.getAttribute("href") === "light.css";
+
+      if (isDefaultTheme) {
+        themeStyle.setAttribute("href", "dark.css");
+      } else {
+        themeStyle.setAttribute("href", "light.css");
+      }
+    });
+  </script>
+</body>
+</html>
