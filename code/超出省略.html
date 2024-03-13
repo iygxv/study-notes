@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .box {
+    width: 100px;
+    /* height: auto; */
+    border: 2px solid skyblue;
+    /* 单行超出省略 */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .box2 {
+    margin-top: 20px;
+    width: 100px;
+    /* height: auto; */
+    border: 2px solid skyblue;
+    /* 多行超出省略 */
+    -webkit-line-clamp: 2; /**  设置两行文字溢出 **/
+    display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    overflow: hidden; /** 隐藏超出的内容 **/
+  }
+</style>
+<body>
+  <div class="box">22222222222222222222222222</div>
+  <div class="box2">
+    222222222222222222222222222222222222
+    2222222222222222222222222222222222222222
+    222222222222222222222222222222</div>
+</body>
+</html>
